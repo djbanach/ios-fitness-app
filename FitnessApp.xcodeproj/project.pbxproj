@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		4E87025222C6DDC2002BC29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E87025022C6DDC2002BC29E /* LaunchScreen.storyboard */; };
 		4E87025D22C6DDC2002BC29E /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E87025C22C6DDC2002BC29E /* FitnessAppTests.swift */; };
 		4E87026822C6DDC2002BC29E /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E87026722C6DDC2002BC29E /* FitnessAppUITests.swift */; };
+		4E87027722C6E36F002BC29E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E87027622C6E36F002BC29E /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		4E87024422C6DDBF002BC29E /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E87024722C6DDBF002BC29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E87024922C6DDBF002BC29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E87024922C6DDBF002BC29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		4E87024C22C6DDBF002BC29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E87024E22C6DDC2002BC29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E87025122C6DDC2002BC29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		4E87026322C6DDC2002BC29E /* FitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E87026722C6DDC2002BC29E /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		4E87026922C6DDC2002BC29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E87027622C6E36F002BC29E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		4E87024622C6DDBF002BC29E /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E87027522C6E31A002BC29E /* Controller */,
 				4E87024722C6DDBF002BC29E /* AppDelegate.swift */,
-				4E87024922C6DDBF002BC29E /* ViewController.swift */,
 				4E87024B22C6DDBF002BC29E /* Main.storyboard */,
 				4E87024E22C6DDC2002BC29E /* Assets.xcassets */,
 				4E87025022C6DDC2002BC29E /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				4E87026922C6DDC2002BC29E /* Info.plist */,
 			);
 			path = FitnessAppUITests;
+			sourceTree = "<group>";
+		};
+		4E87027522C6E31A002BC29E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E87027622C6E36F002BC29E /* LoginController.swift */,
+				4E87024922C6DDBF002BC29E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +216,7 @@
 				};
 			};
 			buildConfigurationList = 4E87023F22C6DDBF002BC29E /* Build configuration list for PBXProject "FitnessApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E87024A22C6DDBF002BC29E /* ViewController.swift in Sources */,
+				4E87027722C6E36F002BC29E /* LoginController.swift in Sources */,
 				4E87024822C6DDBF002BC29E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
